@@ -170,7 +170,7 @@
         
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('Imgs/banner.jpeg');
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('Imgs/vishkk.jpg');
             background-size: cover;
             background-position: center;
             height: 500px;
@@ -597,4 +597,27 @@
     border-radius: 5px;
     font-weight: bold;
     box-shadow: var(--shadow);
+}
+
+.products-layout {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/* Lado esquerdo: menu lateral */
+.sidebar-categories {
+    flex: 0 0 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Lado direito: produtos */
+.products-container {
+    flex: 1; /* ocupa o restante do espaço */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 0; /* removendo padding lateral extra */
 }

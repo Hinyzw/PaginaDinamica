@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sheglam - Maquiagens Profissionais</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="produtos.css">
 </head>
 <body>
     <header>
@@ -16,8 +16,8 @@
             </a>
             
             <ul class="nav-links">
-                <li><a href="#" class="active">Início</a></li>
-                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#" class="active">Produtos</a></li>
                 <li><a href="colecoes.html">Coleções</a></li>
                 <li><a href="promocoes.html">Promoções</a></li>
                 <li><a href="#">Sobre</a></li>
@@ -61,18 +61,13 @@
         <button class="btn" id="checkout-btn" style="width: 100%; margin-top: 15px;">Finalizar Compra</button>
     </div>
     
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Descubra a beleza extraordinária</h1>
-            <p>Maquiagens de alta qualidade com preços acessíveis. Transforme sua rotina de beleza com os produtos Sheglam.</p>
-            <a href="#products" class="btn">Explorar Coleção</a>
-        </div>
-    </section>
     
-    <!-- Categorias e Produtos -->
     <section class="container" id="products">
-        <h2 class="section-title">Nossas Categorias</h2>
-        <div class="categories">
+    <h2 class="section-title">Todos os produtos</h2>
+
+    <div class="products-layout">
+        <!-- Menu lateral de categorias -->
+        <div class="sidebar-categories">
             <button class="category-btn active" data-category="all">Todos</button>
             <button class="category-btn" data-category="Blush">Blush</button>
             <button class="category-btn" data-category="Kits">Kits</button>
@@ -85,12 +80,12 @@
             <button class="category-btn" data-category="Skincare">Skincare</button>
         </div>
 
-
-        
+        <!-- Grid de produtos -->
         <div class="products-container" id="products-container">
-            <!-- Produtos serão gerados dinamicamente via JavaScript -->
+            <!-- Produtos gerados por JavaScript -->
         </div>
-    </section>
+    </div>
+</section>
     
     <!-- Banner Promocional -->
     <section class="container">

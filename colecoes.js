@@ -478,3 +478,16 @@
         // Inicializar a página
         renderProducts(produtos);
         updateCartUI();
+
+        // Filtrar apenas "Kits" ao carregar colecoes.html
+document.addEventListener('loadKitsOnly', () => {
+    const onlyKits = produtos.filter(produto => produto.categoria === 'Kits');
+    renderProducts(onlyKits);
+
+    // Marcar o botão "Kits" como ativo se existir na página
+    const kitsBtn = document.querySelector('[data-category="Kits"]');
+    if (kitsBtn) {
+        document.querySelectorAll('.category-btn').forEach(btn => btn.classList.remove('active'));
+        kitsBtn.classList.add('active');
+    }
+});
